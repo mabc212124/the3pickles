@@ -1,0 +1,49 @@
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    background: black;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+main {
+    background: blue;
+    float: left;
+    width: 100%;
+}
+
+main section {
+    float: left;
+    width: 33.33%;
+}
+
+main section p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main .section1 {
+    background: red;
+}
+
+main .section3 {
+    background: white;
+}
+
+main .section3 p {
+    color: black;
+}
+
+footer {
+    background: yellow;
+}
