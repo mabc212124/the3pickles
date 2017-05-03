@@ -34,11 +34,11 @@ main section p {
     font-size: 60px;
 }
 
-main .section1 {
+main .section {
     background: white;
 }
 
-main .section1 p {
+main .section p {
     color: black;
     padding: 250px;
 }
