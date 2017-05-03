@@ -12,6 +12,7 @@ header h1 {
     text-align: center;
     color: white;
     padding: 50px;
+    font-size: 100px;
 }
 
 main {
@@ -29,15 +30,21 @@ main section p {
     margin: 0;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 250px;
+    font-size: 60px;
 }
 
 main .section1 {
-    background: red;
+    background: white;
+}
+
+main .section1 p {
+    color: black;
+    padding: 250px;
 }
 
 main .section3 {
-    background: white;
+    background: red;
 }
 
 main .section3 p {
@@ -45,5 +52,8 @@ main .section3 p {
 }
 
 footer {
-    background: yellow;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 60px;
 }
