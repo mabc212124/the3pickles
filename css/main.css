@@ -7,7 +7,8 @@ header {
     background: black;
 }
 
-header h1 {
+header h1,
+header h1 a {
     margin: 0;
     text-align: center;
     color: white;
@@ -15,10 +16,19 @@ header h1 {
     font-size: 100px;
 }
 
+header h1 a {
+    text-decoration: none;
+}
+
 main {
     background: blue;
     float: left;
     width: 100%;
+    transition: transform 1s;
+}
+
+.section2.move {
+    transform: rotate(180deg)
 }
 
 main section {
@@ -56,4 +66,21 @@ footer {
     color: white;
     text-align: center;
     font-size: 60px;
+}
+
+.gameWrapper {
+    position: relative;
+    float: left;
+    background: #f1f1f1;
+    width: 100%;
+    height: 500px;
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 1px solid black;
+    background: #baca55;
 }
