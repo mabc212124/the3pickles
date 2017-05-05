@@ -15,6 +15,7 @@ header h1 a {
     padding: 50px;
     font-size: 100px;
 }
+
 header h1 a {
     text-decoration: none;
 }
@@ -70,8 +71,6 @@ footer {
     text-align: center;
     font-size: 60px;
 }
-<<<<<<< HEAD
-=======
 
 .gameWrapper {
     position: relative;
@@ -89,4 +88,3 @@ footer {
     border: 1px solid black;
     background: #baca55;
 }
->>>>>>> 1f2747345eb66855f9b843a0052f3cae0671de11
