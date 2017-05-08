@@ -1,39 +1,46 @@
-const the = document.querySelector('section')
-let allps = document.querySelectorAll('p')
-let section2 = document.querySelector('.section2')
 const square = document.querySelector('.square')
 let squarePosition = 0
 let verticalPosition = 0
 
-function moveSquare(e) {
-    if (section2.classList.contains('move')) {
-        section2.classList.remove('move')
-    } else {
-        section2.classList.add('move')
-
-    }
-}
 
 function move(e) {
     if (e.key === 'ArrowRight') {
         squarePosition += 10
         square.style.left = squarePosition + 'px'
-        console.log('clickint right', squarePosition)
     } else if (e.key === 'ArrowLeft') {
         squarePosition -= 10
         square.style.left = squarePosition + 'px'
-        console.log('left')
     } else if (e.key === 'ArrowUp') {
         verticalPosition -= 10
         square.style.top = verticalPosition + 'px'
-        console.log('top')
     } else if (e.key === 'ArrowDown') {
         verticalPosition += 10
         square.style.top = verticalPosition + 'px'
-        console.log('down')
+    }
+
+    if (e.keyCode === 32) {
+        jump()
     }
 
 }
 
-the.addEventListener('click', moveSquare)
+function jump() {
+    const jumpHeight = 100
+    const currentPosition = {
+        x: square.offsetLeft,
+        y: square.offsetTop
+    }
+
+    console.log(currentPosition.y)
+    console.log(currentPosition.y - jumpHeight)
+
+    if (currentPosition.y >= (currentPosition.y - jumpHeight)) {
+        console.log('entra')
+        squarePosition -= 10
+        square.style.top = squarePosition + 'px'
+    }
+
+    setTimeout(jump, 20)
+}
+
 document.addEventListener('keydown', move)
